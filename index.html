@@ -15,7 +15,7 @@
 
 <html>
     <head>
-      <body>
+      
     <p id='server-time'></p>
     <script>
       var HOST = location.origin.replace(/^http/, 'ws')
@@ -25,12 +25,9 @@
       ws.onmessage = function (event) {
         el.innerHTML = 'Server time: ' + event.data;
       };
-    </script>
-  </body>
-        <script>
             window.onload = function () {
                 
-                var dps = []; // dataPoints
+                var dps = [el.innerHTML = 'Server time: ' + event.data;]; // dataPoints
                 var chart = new CanvasJS.Chart("chartContainer", {
                                                title :{
                                                text: "Dynamic Data"
